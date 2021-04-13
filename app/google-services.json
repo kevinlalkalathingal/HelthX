@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "906688660532",
+    "project_id": "helth-e7fad",
+    "storage_bucket": "helth-e7fad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:906688660532:android:839b0e5ab252d13daab661",
+        "android_client_info": {
+          "package_name": "com.example.helth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "906688660532-vbb153pi55kfukdoja19fvsi7j13b7gs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.helth",
+            "certificate_hash": "519a98285e8c2c8cd8826a38357c8ad3604649f0"
+          }
+        },
+        {
+          "client_id": "906688660532-t7lg3284vmuhb4dlbcfieuvqgd2glpmh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLDxQ5D8Y6kB3plt5-vRhOVKJRqrBfhpI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "906688660532-t7lg3284vmuhb4dlbcfieuvqgd2glpmh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
