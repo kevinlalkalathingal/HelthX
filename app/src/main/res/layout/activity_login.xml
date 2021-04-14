@@ -9,23 +9,23 @@
     android:background="@mipmap/helth_background"
     tools:context=".LoginActivity">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="213dp"
-        android:layout_height="163dp"
-        android:layout_marginTop="150dp"
-        android:layout_marginRight="10dp"
-        app:srcCompat="@mipmap/helth_logo" />
-
     <TextView
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:text="@string/login_page"
-        android:textColor="@android:color/darker_gray"
+        android:textColor="#b2bde1"
         android:textSize="40sp"
         android:layout_marginBottom="10dp"
         android:layout_marginTop="10dp"
         android:textAlignment="center"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="130dp"
+        android:layout_height="122dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="100dp"
+        app:srcCompat="@mipmap/helth_logo" />
 
     <EditText
         android:layout_width="match_parent"

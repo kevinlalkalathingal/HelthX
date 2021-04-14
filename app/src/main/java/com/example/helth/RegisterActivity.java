@@ -102,7 +102,7 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     private void sendtoMain() {
-        Intent intent = new Intent(RegisterActivity.this, MainActivity.class);
+        Intent intent = new Intent(RegisterActivity.this, SplashScreen.class);
         startActivity(intent);
         finish();
     }
