@@ -1,23 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/logout_btn"
-        android:layout_width="67dp"
-        android:layout_height="22dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:background="@color/white"
-        android:drawableEnd="@drawable/exit_to_app"
-        android:onClick="logout"
-        android:text="Logout"
-        android:textSize="10sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frame_layout"
+        android:layout_above="@+id/bottom_nav">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:id="@+id/logout_btn"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="700dp"
+            android:layout_marginEnd="140dp"
+            android:background="@color/grey"
+            android:drawableEnd="@drawable/exit_to_app"
+            android:onClick="logout"
+            android:text="Logout"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_nav"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        app:itemIconTint="@android:color/black"
+        tools:layout_editor_absoluteX="1dp"
+        app:menu="@menu/bottom_menu"
+        tools:layout_editor_absoluteY="50dp" />
+
+</RelativeLayout>
