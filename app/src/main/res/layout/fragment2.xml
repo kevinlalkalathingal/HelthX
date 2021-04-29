@@ -1,16 +1,258 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@mipmap/helth_background"
+    android:orientation="vertical"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        android:layout_marginBottom="5dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ib_menu_f2"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_baseline_menu_24"
+            android:layout_gravity="left|center_vertical"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Profile"
+            android:textColor="#b2bde1"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ib_edit_f2"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_baseline_edit_24"
+            android:layout_gravity="right|center_vertical"/>
+
+    </androidx.cardview.widget.CardView>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:cardPreventCornerOverlap="false"
+            app:cardCornerRadius="50dp"
+            android:layout_gravity="center_vertical"
+            android:elevation="8dp"
+            app:cardElevation="10dp">
+
+            <ImageView
+                android:id="@+id/iv_f2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_baseline_person"
+                android:clickable="true"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_name_f2"
+                android:layout_marginBottom="2dp"
+                android:hint="name"
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                android:textAlignment="viewStart"
+                android:textColor="@android:color/white"
+                android:gravity="start"
+                android:textSize="25sp"/>
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_age_f2"
+                android:layout_marginBottom="2dp"
+                android:hint="age"
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                android:textAlignment="viewStart"
+                android:textColor="@android:color/white"
+                android:gravity="start"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Profile"
-        android:textSize="50sp"
+        android:layout_marginBottom="12dp"
+        android:hint="PRIMARY DETAILS"
         android:textAlignment="center"
-        tools:ignore="MissingConstraints"/>
+        android:textColor="@android:color/white"
+        android:padding="5dp"
+        android:gravity="center"
+        android:textSize="20sp"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contact"
+        android:textSize="15sp"
+        android:layout_marginStart="20dp"
+        android:padding="8dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@android:color/darker_gray"
+        android:drawablePadding="20dp"
+        android:paddingStart="20dp"
+        android:paddingLeft="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:id="@+id/tv_contact_f2"
+        android:layout_marginStart="20dp"
+        android:padding="8dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@android:color/darker_gray"
+        android:drawablePadding="20dp"
+        android:paddingStart="20dp"
+        android:paddingLeft="20dp"/>
+
+    <TableRow android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="20dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Blood"
+        android:textSize="15sp"
+        android:layout_marginStart="20dp"
+        android:padding="8dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@android:color/darker_gray"
+        android:drawablePadding="20dp"
+        android:paddingStart="20dp"
+        android:paddingLeft="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:id="@+id/tv_blood_f2"
+        android:layout_marginStart="20dp"
+        android:padding="8dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@android:color/darker_gray"
+        android:drawablePadding="20dp"
+        android:paddingStart="20dp"
+        android:paddingLeft="20dp"/>
+
+    <TableRow android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Height"
+        android:textSize="15sp"
+        android:layout_marginStart="20dp"
+        android:padding="8dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@android:color/darker_gray"
+        android:drawablePadding="20dp"
+        android:paddingStart="20dp"
+        android:paddingLeft="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:id="@+id/tv_height_f2"
+        android:layout_marginStart="20dp"
+        android:padding="8dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@android:color/darker_gray"
+        android:drawablePadding="20dp"
+        android:paddingStart="20dp"
+        android:paddingLeft="20dp"/>
+
+    <TableRow android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Weight"
+        android:textSize="15sp"
+        android:layout_marginStart="20dp"
+        android:padding="8dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@android:color/darker_gray"
+        android:drawablePadding="20dp"
+        android:paddingStart="20dp"
+        android:paddingLeft="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_marginStart="20dp"
+        android:padding="8dp"
+        android:id="@+id/tv_weight_f2"
+        android:layout_marginLeft="20dp"
+        android:textColor="@android:color/darker_gray"
+        android:drawablePadding="20dp"
+        android:paddingStart="20dp"
+        android:paddingLeft="20dp"/>
+
+    <TableRow android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="20dp"/>
+
+</LinearLayout>

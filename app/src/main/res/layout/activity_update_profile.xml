@@ -5,17 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@mipmap/helth_background"
     android:gravity="center"
-    tools:context=".CreateProfile">
+    android:background="@mipmap/helth_background"
+    tools:context=".UpdateProfile">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="Create Profile"
+        android:layout_marginBottom="60dp"
+        android:text="Update Profile"
+        android:textAlignment="center"
         android:textColor="#b2bde1"
-        android:textSize="40sp"
-        android:textAlignment="center"/>
+        android:textSize="40sp" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="150dp"
@@ -23,10 +24,11 @@
         app:cardPreventCornerOverlap="false"
         app:cardCornerRadius="75dp"
         android:layout_marginTop="20dp"
-        android:layout_marginBottom="30dp">
+        android:layout_marginBottom="60dp">
 
         <ImageView
             android:id="@+id/iv_cp"
+            android:src="@drawable/ic_baseline_person"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="fitCenter"
@@ -113,7 +115,7 @@
         android:layout_margin="10dp"
         android:background="#b2bde1"
         android:radius="24dp"
-        android:id="@+id/btn_cp"/>
+        android:id="@+id/btn_up"/>
 
     <ProgressBar
         android:layout_width="340dp"
@@ -126,4 +128,3 @@
         android:layout_marginTop="20dp"/>
 
 </LinearLayout>
-

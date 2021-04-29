@@ -17,22 +17,21 @@
             android:layout_width="120dp"
             android:layout_height="30dp"
             android:layout_marginTop="700dp"
-            android:layout_marginEnd="140dp"
+            android:layout_marginLeft="280dp"
             android:background="@color/grey"
             android:drawableEnd="@drawable/exit_to_app"
             android:onClick="logout"
             android:text="Logout"
-            android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
+            android:textSize="20sp" />
     </FrameLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/bottom_nav"
+        app:itemTextColor="@android:color/black"
         android:layout_alignParentBottom="true"
+        android:focusableInTouchMode="true"
         android:background="@android:color/white"
         app:itemIconTint="@android:color/black"
         tools:layout_editor_absoluteX="1dp"
